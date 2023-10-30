@@ -3,27 +3,23 @@
  *  <div id='parent'> 
  *      <div id="child">
  *          <h1>I'm a h1 tag</h1>
+ *          <h2>I'm a h2 tag</h2>
  *      </div>
  *  </div>
  * 
  * 
- * ReactElement(Object) ==> HTML (Browser understands)
- * 
+ * if we want to give siblings tag, that is we want to give 2 heading tag, just for example,
+ * in that case give like the below code 
 
  */
 
 const parent = React.createElement(
     "div",
     {id: "parent"},
-    React.createElement(
-        "div",
-        {id: "child"},
-        React.createElement(
-            "h1",
-            {},
-            "I'm a h1 tag"
-            )
-    )
+    React.createElement("div",{id: "child"},[
+        React.createElement("h1", {} ,"I'm a h1 tag"),
+        React.createElement("h2", {} ,"I'm a h2 tag"),
+    ])
 )
 
 
