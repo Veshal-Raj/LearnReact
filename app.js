@@ -7,6 +7,7 @@
  *  </div>
  * 
  * 
+ * ReactElement(Object) ==> HTML (Browser understands)
  * 
 
  */
