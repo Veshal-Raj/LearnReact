@@ -11,11 +11,12 @@
 *          </div>
  *  </div>
  * 
- * 
- * if we want to give siblings tag, that is we want to give 2 heading tag, just for example,
- * in that case give like the below code 
 
  */
+
+
+//          This is the core of react. the below code is just an example for that, 
+//          react can be written without JSX
 
 const parent = React.createElement(
     "div",
