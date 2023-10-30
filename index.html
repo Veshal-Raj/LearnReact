@@ -8,20 +8,24 @@
 </head>
 <body>
     <!--
-        Behind the scene 
-        =================
-        First of all when the page loads, browser reads the h1 tag inside the root div
-        and it see Veshal is here inside the h1 tag. then it prints, veshal is here,
-        but after moving down it goes to the script it will loads react, then it will load
-        react dom into the app, then it will go to the script file, app.js and it will load 
-        the script file it will execute the code enteres in there and render the things that 
-        written there in the root div. It will replace, not append, it will replace the root div.
+      if we write something above or below the root div, it will not get replaced by the react,
+      only the the root div is getting replaced.
+
+      In conclusion react will only work in the div id root.
     -->
+
+    <!--
+        React is an library, it can work independtly, in a small piece of a code as well in your application.
+        you can use react wherever you want. it's not a framework.
+        you can react in your existing project also.
+    -->
+    <h1>Hello Top of root</h1>
     <div id="root">
         <!-- here if i write anything inside the root tag, it will replaced by the root.render tag in the app.js  -->
 
         <h1>Veshal is Here!</h1>
     </div>
+    <h1>Hello Below of root</h1>
 
     <!-- And i found one more thing, if i give the cdn for product, in the console, there is no error, but if i am using then
     normal cdn, it is showing error, like unique key  -->
