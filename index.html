@@ -3,46 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn React</title>
+    <title>LearnReact</title>
     <link rel="stylesheet" href="./index.css" />
 </head>
 <body>
-    <!--
-      if we write something above or below the root div, it will not get replaced by the react,
-      only the the root div is getting replaced.
-
-      In conclusion react will only work in the div id root.
-    -->
-
-    <!--
-        React is an library, it can work independtly, in a small piece of a code as well in your application.
-        you can use react wherever you want. it's not a framework.
-        you can react in your existing project also.
-    -->
-    <h1>Hello Top of root</h1>
+    
+ 
     <div id="root">
         <!-- here if i write anything inside the root tag, it will replaced by the root.render tag in the app.js  -->
-
-        <h1>Veshal is Here!</h1>
+        <h1>Veshal is Hereeeeeeeeee!</h1>
     </div>
-    <h1>Hello Below of root</h1>
-
-    <!-- And i found one more thing, if i give the cdn for product, in the console, there is no error, but if i am using then
-    normal cdn, it is showing error, like unique key  -->
-
-        <!-- Core of React -->
-        <script
-        crossorigin
-            src="https://unpkg.com/react@18/umd/react.development.js">
-        </script>
-
-        <!-- React library used for DOM Manipulation -->
-        <script
-        crossorigin 
-            src="https://unpkg.com/react-dom@18/umd/react-dom.development.js">
-        </script>
+  
     
-    <script src="./app.js"></script>
+    <script type="module" src="./app.js"></script>
 
 </body>
 </html>
