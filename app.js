@@ -1,25 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+// React create element => ReactElement - Js Object => (when we render this into DOM, then it becomes) Html element
 
-const parent = React.createElement(
-    "div",
-    {id: "parent"},
-    [
-        React.createElement("div",{id: "child"},[
-            React.createElement("h1", {} ,"This is Veshal"),
-            React.createElement("h2", {} ,"I'm a h2 tag"),
-        ]),
-        React.createElement("div",{id: "child2"},[
-            React.createElement("h1", {} ,"I'm a h1 tag"),
-            React.createElement("h2", {} ,"I'm a h2 tag"),
-        ])
-    ]
-)
- 
-console.log(parent) // object
+// JSX --> Js syntax to create react elements
+// JSX is html like syntax, or xml like syntax, it's not html written inside the js
+// JSX (transpiled before it reaches the JS Engine) -- Parcel- Babel
+// JSx => Babel (converts) => React.CreateElement
+const jsxHeading = <h1  className="head" >Hello React!</h1>
+// JSX => React.createElement =>  ReactElement - Js Object => (when we render this into DOM, then it becomes) Html element
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-   
-root.render(parent);
 
+const root = ReactDOM.createRoot(document.getElementById('root'))
+
+root.render(jsxHeading)
